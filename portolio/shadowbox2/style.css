@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    padding: 2em;
+    background: rgb(178, 203, 236);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 4em;
+    margin-top: 2em;
+}
+.card {
+    background: white;
+    padding: 1.5em;
+    border-radius: .4em;
+    box-shadow: 0 2.2px 0.1px -6px rgba(0,0,0,.35),
+                0 5.3px 6px -6px rgba(0,0,0,.228),
+                0 10px 14.2px -6px rgba(0,0,0,.202),
+                0 17.9px 24.8px -6px rgba(0,0,0,.19),
+                0 33.4px 39.4px -6px rgba(0, 0,0, 177),
+                0 80px 69px -6px rgba(0, 0, 0, 0.146);
+}
