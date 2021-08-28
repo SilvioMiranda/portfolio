@@ -1,0 +1,234 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #262626;
+}
+.digital-clock .hour,
+.digital-clock .minute,
+.digital-clock .second{
+	position: relative;
+	display: inline-block;
+	margin: 30px;
+}
+.digital-clock .hour:before,
+.digital-clock .minute:before,
+.digital-clock .hour:after,
+.digital-clock .minute:after{
+	content: '';
+	position: absolute;
+	right: -40px;
+	width: 20px;
+	height: 20px;
+	background: #15ff00;
+	opacity: 0;
+	animation: anim 1s ease-in-out infinite;
+}
+@keyframes anim{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.digital-clock .hour:before,
+.digital-clock .minute:before{
+	top: 80px;
+}
+.digital-clock .hour:after,
+.digital-clock .minute:after{
+	top: 180px;
+}
+.digital-clock svg{
+	display: inline-block;
+	margin: 20px;
+}
+.digital-clock svg .segment{
+	fill: rgba(0,0,0,.15);
+	transition: .3s ease-in-out;
+}
+svg.num-1 .b,
+svg.num-1 .c,
+
+svg.num-2 .a,
+svg.num-2 .b,
+svg.num-2 .d,
+svg.num-2 .e,
+svg.num-2 .g,
+
+svg.num-3 .a,
+svg.num-3 .b,
+svg.num-3 .c,
+svg.num-3 .d,
+svg.num-3 .g,
+
+svg.num-4 .b,
+svg.num-4 .c,
+svg.num-4 .f,
+svg.num-4 .g,
+
+svg.num-5 .a,
+svg.num-5 .c,
+svg.num-5 .d,
+svg.num-5 .f,
+svg.num-5 .g,
+
+svg.num-6 .a,
+svg.num-6 .c,
+svg.num-6 .d,
+svg.num-6 .e,
+svg.num-6 .f,
+svg.num-6 .g,
+
+svg.num-7 .a,
+svg.num-7 .b,
+svg.num-7 .c,
+
+svg.num-8 .a,
+svg.num-8 .b,
+svg.num-8 .c,
+svg.num-8 .d,
+svg.num-8 .e,
+svg.num-8 .f,
+svg.num-8 .g,
+
+svg.num-9 .a,
+svg.num-9 .b,
+svg.num-9 .c,
+svg.num-9 .d,
+svg.num-9 .f,
+svg.num-9 .g,
+
+svg.num-0 .a,
+svg.num-0 .b,
+svg.num-0 .c,
+svg.num-0 .d,
+svg.num-0 .e,
+svg.num-0 .f
+{
+	fill: #15ff00;
+}
+#second-1.num-1 .b,
+#second-1.num-1 .c,
+
+#second-1.num-2 .a,
+#second-1.num-2 .b,
+#second-1.num-2 .d,
+#second-1.num-2 .e,
+#second-1.num-2 .g,
+
+#second-1.num-3 .a,
+#second-1.num-3 .b,
+#second-1.num-3 .c,
+#second-1.num-3 .d,
+#second-1.num-3 .g,
+
+#second-1.num-4 .b,
+#second-1.num-4 .c,
+#second-1.num-4 .f,
+#second-1.num-4 .g,
+
+#second-1.num-5 .a,
+#second-1.num-5 .c,
+#second-1.num-5 .d,
+#second-1.num-5 .f,
+#second-1.num-5 .g,
+
+#second-1.num-6 .a,
+#second-1.num-6 .c,
+#second-1.num-6 .d,
+#second-1.num-6 .e,
+#second-1.num-6 .f,
+#second-1.num-6 .g,
+
+#second-1.num-7 .a,
+#second-1.num-7 .b,
+#second-1.num-7 .c,
+
+#second-1.num-8 .a,
+#second-1.num-8 .b,
+#second-1.num-8 .c,
+#second-1.num-8 .d,
+#second-1.num-8 .e,
+#second-1.num-8 .f,
+#second-1.num-8 .g,
+
+#second-1.num-9 .a,
+#second-1.num-9 .b,
+#second-1.num-9 .c,
+#second-1.num-9 .d,
+#second-1.num-9 .f,
+#second-1.num-9 .g,
+
+#second-1.num-0 .a,
+#second-1.num-0 .b,
+#second-1.num-0 .c,
+#second-1.num-0 .d,
+#second-1.num-0 .e,
+#second-1.num-0 .f{
+	fill: #e30909;
+}
+#second-2.num-1 .b,
+#second-2.num-1 .c,
+
+#second-2.num-2 .a,
+#second-2.num-2 .b,
+#second-2.num-2 .d,
+#second-2.num-2 .e,
+#second-2.num-2 .g,
+
+#second-2.num-3 .a,
+#second-2.num-3 .b,
+#second-2.num-3 .c,
+#second-2.num-3 .d,
+#second-2.num-3 .g,
+
+#second-2.num-4 .b,
+#second-2.num-4 .c,
+#second-2.num-4 .f,
+#second-2.num-4 .g,
+
+#second-2.num-5 .a,
+#second-2.num-5 .c,
+#second-2.num-5 .d,
+#second-2.num-5 .f,
+#second-2.num-5 .g,
+
+#second-2.num-6 .a,
+#second-2.num-6 .c,
+#second-2.num-6 .d,
+#second-2.num-6 .e,
+#second-2.num-6 .f,
+#second-2.num-6 .g,
+
+#second-2.num-7 .a,
+#second-2.num-7 .b,
+#second-2.num-7 .c,
+
+#second-2.num-8 .a,
+#second-2.num-8 .b,
+#second-2.num-8 .c,
+#second-2.num-8 .d,
+#second-2.num-8 .e,
+#second-2.num-8 .f,
+#second-2.num-8 .g,
+
+#second-2.num-9 .a,
+#second-2.num-9 .b,
+#second-2.num-9 .c,
+#second-2.num-9 .d,
+#second-2.num-9 .f,
+#second-2.num-9 .g,
+
+#second-2.num-0 .a,
+#second-2.num-0 .b,
+#second-2.num-0 .c,
+#second-2.num-0 .d,
+#second-2.num-0 .e,
+#second-2.num-0 .f{
+	fill: #e30909;
+}
